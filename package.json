@@ -1,29 +1,29 @@
 {
-  "name": "test-software-engineer",
+  "name": "interview-coding-test",
   "version": "1.0.0",
-  "description": "ComparaOnline Software Engineer Test",
+  "description": "Solucion para prueba de desarrollo",
   "main": "index.js",
   "scripts": {
-    "test": "mocha spec/*.js"
+    "test": "node ./node_modules/mocha/bin/mocha",
+    "after-30-days": "node after-30-days.js"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/comparaonline/test-software-engineer.git"
+    "url": "git+https://github.com/FranciscoGallegos-code/interview-coding-test.git"
   },
   "keywords": [
-    "comparaonline",
-    "test",
-    "software",
-    "engineer"
+    "solucion",
+    "prueba",
+    "desarrollo"
   ],
-  "author": "ComparaOnline",
-  "license": "MIT",
+  "author": "Francisco Gallegos",
+  "license": "ISC",
   "bugs": {
-    "url": "https://github.com/comparaonline/test-software-engineer/issues"
+    "url": "https://github.com/FranciscoGallegos-code/interview-coding-test/issues"
   },
-  "homepage": "https://github.com/comparaonline/test-software-engineer#readme",
-  "devDependencies": {
-    "chai": "^4.1.2",
-    "mocha": "^4.0.1"
+  "homepage": "https://github.com/FranciscoGallegos-code/interview-coding-test#readme",
+  "dependencies": {
+    "chai": "^4.3.3",
+    "mocha": "^8.3.0"
   }
 }

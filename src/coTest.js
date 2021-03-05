@@ -1,3 +1,5 @@
+const { runInThisContext } = require("vm");
+
 class Product {
   constructor(name, sellIn, price) {
     this.name = name;
@@ -16,6 +18,11 @@ class CarInsurance {
         if (this.products[i].price > 0) {
           if (this.products[i].name != 'Mega Coverage') {
             this.products[i].price = this.products[i].price - 1;
+            if(this.products[i].price > 0) {
+              if (this.products[i].name == 'Super Sale') {
+                this.products[i].price = this.products[i].price - 1;
+              }
+          }
           }
         }
       } else {
@@ -42,7 +49,7 @@ class CarInsurance {
         if (this.products[i].name != 'Full Coverage') {
           if (this.products[i].name != 'Special Full Coverage') {
             if (this.products[i].price > 0) {
-              if (this.products[i].name != 'Mega Coverage') {
+              if (this.products[i].name != 'Mega Coverage' && this.products[i].name != 'Super Sale') {
                 this.products[i].price = this.products[i].price - 1;
               }
             }
