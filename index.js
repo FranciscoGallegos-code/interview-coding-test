@@ -1,5 +1,4 @@
 const { Product, CarInsurance } = require("./src/coTest.js");
-const fs = require('fs');
 
 const productsAtDayZero = [
     new Product('Medium Coverage', 10, 20),

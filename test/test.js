@@ -80,5 +80,4 @@ describe("Unit Test", function() {
     }
     expect(coTest.products[0].price, "Precio").equal(1);
   });
-
 });

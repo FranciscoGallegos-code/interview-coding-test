@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha",
-    "after-30-days": "node after-30-days.js"
+    "after-30-days": "node index.js"
   },
   "repository": {
     "type": "git",
